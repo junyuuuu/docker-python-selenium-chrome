@@ -13,6 +13,8 @@ RUN apt-get install -y vim iproute2 net-tools ca-certificates curl wget software
 RUN echo set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936 >> /etc/vim/vimrc
 RUN echo set termencoding=utf-8 >> /etc/vim/vimrc
 RUN echo set encoding=utf-8 >> /etc/vim/vimrc
+#vim更改注释颜色
+RUN echo hi comment ctermfg=6 >> /etc/vim/vimrc
 
 #安装python3.6
 RUN add-apt-repository ppa:jonathonf/python-3.6

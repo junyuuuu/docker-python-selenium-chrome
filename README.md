@@ -21,6 +21,12 @@ apt源修改为了阿里的，具体请查看Dockerfile内容。
 
 然后等待构建成功即可。
 
+### 在线仓库
+
+```
+docker pull junyuuuu/python-selenium-chrome:1.0.1
+```
+
 
 ### 运行
 
