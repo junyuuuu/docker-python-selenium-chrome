@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM phusion/baseimage:0.10.2
 LABEL author="junyuuuu@foxmail.com"
 
 #用ubuntu国内源替换默认源
@@ -55,3 +55,5 @@ RUN apt-get clean
 
 #print()时在控制台正常显示中文
 ENV PYTHONIOENCODING=utf-8
+
+CMD ["/sbin/my_init"]

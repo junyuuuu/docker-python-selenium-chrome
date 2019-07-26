@@ -4,7 +4,8 @@
 
 此镜像包括如下内容：
 
-- Ubuntu 16.04 LTS
+- ~~Ubuntu 16.04 LTS~~
+- [phusion/baseimage](https://github.com/phusion/baseimage-docker)
 - Python 3.6
 - Chrome
 - Chromedriver
