@@ -53,7 +53,7 @@ RUN mv chromedriver /usr/bin/
 RUN rm get-pip.py google-chrome*.deb chromedriver_linux64.zip
 
 #清理缓存包
-RUN apt-get clean
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 #print()时在控制台正常显示中文
 ENV PYTHONIOENCODING=utf-8
