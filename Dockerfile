@@ -49,6 +49,10 @@ RUN unzip chromedriver_linux64.zip
 RUN chmod 777 chromedriver
 RUN mv chromedriver /usr/bin/
 
+ADD build /opt
+#安装最新版本supervisor
+RUN /opt/supervisor.sh
+
 #删除文件
 RUN rm get-pip.py google-chrome*.deb chromedriver_linux64.zip
 
